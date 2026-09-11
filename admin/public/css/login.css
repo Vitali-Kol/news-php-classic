@@ -1,0 +1,74 @@
+﻿body {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #eee;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 380px;
+    margin: 0 auto;
+}
+
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-signin .form-signin-heading {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: normal;
+    color: #333;
+}
+
+.form-signin .form-control {
+    position: relative;
+    height: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.form-signin button[type="submit"] {
+    margin-top: 10px;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    color: #fff;
+    padding: 10px 16px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    border: 1px solid transparent;
+}
+
+.form-signin button[type="submit"]:hover {
+    background-color: #286090;
+}
+
+.error-msg {
+    background-color: #ffeb3b;
+    color: #333;
+    padding: 3px 6px;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.form-signin a {
+    color: #337ab7;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.form-signin a:hover {
+    text-decoration: underline;
+}

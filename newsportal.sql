@@ -12,17 +12,24 @@ INSERT INTO `category` (`id`, `name`) VALUES
 (2, 'Maailm'),
 (3, 'Krimi');
 
-DROP TABLE IF EXISTS `user`;
-CREATE TABLE `user` (
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `username` varchar(255) NOT NULL,
-  `email` varchar(255) NOT NULL,
-  `password` varchar(255) NOT NULL,
-  PRIMARY KEY (`id`)
+  `username` varchar(100) CHARACTER SET utf8 COLLATE utf8_estonian_ci NOT NULL,
+  `job` varchar(100) CHARACTER SET utf8 COLLATE utf8_estonian_ci NOT NULL,
+  `email` varchar(50) CHARACTER SET utf8 COLLATE utf8_estonian_ci NOT NULL,
+  `login` varchar(20) CHARACTER SET utf8 COLLATE utf8_estonian_ci NOT NULL,
+  `password` varchar(255) CHARACTER SET utf8 COLLATE utf8_estonian_ci NOT NULL,
+  `status` varchar(20) CHARACTER SET utf8 COLLATE utf8_estonian_ci NOT NULL,
+  `registration_date` date NOT NULL,
+  `pass` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `email` (`email`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-INSERT INTO `user` (`id`, `username`, `email`, `password`) VALUES
-(1, 'admin', 'admin@example.com', 'admin');
+INSERT INTO `users` (`id`, `username`, `job`, `email`, `login`, `password`, `status`, `registration_date`, `pass`) VALUES
+(1, 'admin', 'Portal admin', 'admin@newsportal.ee', 'admin', '$2y$12$pxB2ofiiNZkxObmbBvBOyegwCjHCVFYhapjiSsdYXUaJ9Z1IH6pQW', 'admin', '2019-11-05', '123456'),
+(2, 'anonim', 'Portal anonim', 'user@newsportal.ee', 'anonim', '$2y$10$dYK1sCogKL/zZBef.V/gBeynL5mdt0QxZlwvEUBkS0jkdXYRMPHRa', 'user', '2019-11-05', '111111');
 
 DROP TABLE IF EXISTS `news`;
 CREATE TABLE `news` (
