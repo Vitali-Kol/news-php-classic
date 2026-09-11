@@ -1,0 +1,132 @@
+﻿body {
+    font-family: 'Noto Serif', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+}
+
+nav.one {
+    background-color: #a30000;
+    width: 100%;
+    position: relative;
+}
+
+ul.topmenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+ul.topmenu > li {
+    position: relative;
+}
+
+ul.topmenu > li > a {
+    display: block;
+    padding: 12px 25px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+ul.topmenu > li > a:hover {
+    background-color: #800000;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+ul.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #a30000;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    min-width: 140px;
+    z-index: 999;
+}
+
+ul.topmenu > li:hover .submenu {
+    display: block;
+}
+
+ul.submenu li.submenuunit {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.submenu li.submenuunit a {
+    display: block;
+    padding: 8px 15px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+ul.submenu li.submenuunit a:hover {
+    background-color: #800000;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px 40px;
+}
+
+.divBox {
+    max-width: 900px;
+}
+
+.divBox h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.divBox h2 {
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.divBox a {
+    color: #0066cc;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+.divBox a:hover {
+    color: #003366;
+}
+
+.divBox img {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.divBox p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+.divBox li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+hr {
+    margin-top: 40px;
+    border: 0;
+    border-top: 1px solid #ddd;
+}
