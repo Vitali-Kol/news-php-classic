@@ -125,6 +125,44 @@ section {
     font-size: 14px;
 }
 
+#ctable {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#ctable th, #ctable td {
+    border: 1px solid #7cb372;
+    padding: 8px 15px;
+    text-align: left;
+}
+
+#ctable th {
+    background-color: #92d050;
+    font-weight: bold;
+    color: #000;
+}
+
+#ctable td {
+    background-color: #ffffff;
+}
+
+form[action="insertcomment"] {
+    margin-top: 15px;
+}
+
+form[action="insertcomment"] input[type="text"] {
+    padding: 4px 8px;
+    border: 1px solid #999;
+}
+
+form[action="insertcomment"] input[type="submit"] {
+    padding: 4px 12px;
+    cursor: pointer;
+}
+
 hr {
     margin-top: 40px;
     border: 0;
