@@ -30,5 +30,17 @@ class controllerAdminNews {
         include_once('viewAdmin/newsEditForm.php');
     }
 
+    //-----------------delete
+    public static function newsDeleteForm($id) {
+        $arr = modelAdminCategory::getCategoryList();
+        $detail = modelAdminNews::getNewsDetail($id);
+        include_once('viewAdmin/newsDeleteForm.php');
+    }
+
+    public static function newsDeleteResult($id) {
+        $test = modelAdminNews::getNewsDelete($id);
+        include_once('viewAdmin/newsDeleteForm.php');
+    }
+
 }//class
 ?>
